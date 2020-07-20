@@ -15,7 +15,6 @@ namespace chessnet
 
                 board.SetPieceAtPos(new Tower(board, Color.Grey), new Position(0, 0));
                 board.SetPieceAtPos(new Tower(board, Color.Grey), new Position(0, 5));
-                board.SetPieceAtPos(new Tower(board, Color.Grey), new Position(0, 9));
                 
                 Window.PrintBoard(board);
             }
