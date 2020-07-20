@@ -1,4 +1,6 @@
 ﻿using System;
+using chessnet.Game;
+using chessnet.Game.World;
 
 namespace chessnet
 {
@@ -7,7 +9,8 @@ namespace chessnet
         static void Main(string[] args)
         {
             Console.BackgroundColor = ConsoleColor.Gray;
-            Console.WriteLine("Hello World!");
+            Board board = new Board(8, 8);
+            Window.PrintBoard(board);
         }
     }
 }

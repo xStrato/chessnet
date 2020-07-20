@@ -1,4 +1,4 @@
-namespace chessnet.Game.Board
+namespace chessnet.Game.World
 {
     public class Piece
     {

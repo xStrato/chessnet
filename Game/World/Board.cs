@@ -12,5 +12,6 @@ namespace chessnet.Game.World
             Columns = columns;
             Pieces = new Piece[rows, columns];
         }
+        public Piece Piece(int row, int column) => Pieces[row, column];
     }
 }
