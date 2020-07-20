@@ -11,7 +11,7 @@ namespace chessnet.Game
             {
                 for (int j = 0; j < board.Columns; j++)
                 {
-                    if(board.Piece(i, j) == null){Write("-- ");} 
+                    if(board.Piece(i, j) == null){Write("- ");} 
                     else{Write(board.Piece(i, j));}
                 }
                 WriteLine();

@@ -13,5 +13,10 @@ namespace chessnet.Game.World
             Pieces = new Piece[rows, columns];
         }
         public Piece Piece(int row, int column) => Pieces[row, column];
+        public void SetPieceAtPos(Piece piece, Position pos) 
+        {
+            Pieces[pos.Row, pos.Column] = piece;
+            piece.Position = pos;
+        }
     }
 }
