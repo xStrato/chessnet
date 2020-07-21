@@ -5,6 +5,7 @@ namespace chessnet.Game.World
         Black,
         White,
         Grey,
-        Yellow
+        Yellow,
+        Red
     }
 }

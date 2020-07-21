@@ -1,6 +1,7 @@
 ﻿using static System.Console;
 using chessnet.Game;
 using chessnet.Game.World;
+using chessnet.Game.Rules;
 using chessnet.Game.GameObjects;
 
 namespace chessnet
@@ -11,17 +12,15 @@ namespace chessnet
         {
             try
             {
-                Board board = new Board(8, 8);
-
-                board.SetPieceAtPos(new Tower(board, Color.Grey), new Position(0, 0));
-                board.SetPieceAtPos(new Tower(board, Color.Grey), new Position(0, 5));
+                var match = new Match();
                 
-                Window.PrintBoard(board);
+                Window.PrintBoard(match.Board);
             }
             catch (System.Exception err)
             {
                 WriteLine(err.Message);
             }
+            // ReadLine();
         }
     }
 }

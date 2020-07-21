@@ -7,7 +7,7 @@ namespace chessnet.Game.Rules
         public char Column { get; set; }
         public int Row { get; set; }
 
-        public ChessPosition(int row, char column)
+        public ChessPosition(char column, int row)
         {
             Row = row;
             Column = column;

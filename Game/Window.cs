@@ -13,8 +13,8 @@ namespace chessnet.Game
                 Write(8 - i +" ");
                 for (int j = 0; j < board.Columns; j++)
                 {
-                    if(board.Piece(i, j) == null){Write("- ");} 
-                    else{PrintPiece(board.Piece(i, j)); Write(" ");}
+                    if(board.GetPiece(i, j) == null){Write("- ");} 
+                    else{PrintPiece(board.GetPiece(i, j)); Write(" ");}
                 }
                 WriteLine();
             }

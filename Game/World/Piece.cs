@@ -14,5 +14,7 @@ namespace chessnet.Game.World
             Color = color;
             NumMoviments = 0;
         }
+
+        public void IncrementMoviment() => NumMoviments++;
     }
 }
